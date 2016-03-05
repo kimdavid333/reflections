@@ -1,0 +1,31 @@
+Question: What happens when you initialize a repository? Why do you need to do
+it?
+
+    First of all, anyone can initialize a repository by using the command, git init.
+    What it does is it creates a directory to contain all the metadata, which I
+    understood so far as some sort of data that reflects all the history of
+    commits within this repository. 
+    The Interesting about this git init is that once you initialize a
+    repository, there is no commit taking place even if the working directory
+    already contains some files. The reason for this sort of implementation is
+    to allow:
+    1) To allow user to set all the files of repository by letting them make
+    first commit himself.
+    2) Git does not want to accidentally set dependencies among files that are
+    not meant to be in that repository. 
+    3) It goes against its philosophy which is to allow the user to define its
+    saving point - by committing, manually. This idea contrast to Google Docs'
+    implementation of auto-save.
+
+======================================================================================
+Question: How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+Staging area is different in a sense that it is not "real", meaning it is not an 
+actual storage where bunch of files reside in. Rather, staging area is an
+abstraction that enable git's core philosophy of: one commit represent one
+logical change. As a logical change can take multiple files to be represented, a
+programmers can simply add these files to stage area where they can be commited
+as one. Notice that if stage area was not available, each commit can only
+operatoes on one file as well. Then for the most of time, each commit will be
+only represent partial changes rather a whole logical change. 
