@@ -1,0 +1,73 @@
+Question: How did viewing a diff between two versions of a file help you see the
+bug that was introduced?
+
+Assuming the original copy was bug-free, diff helps programmers to find possible bugs
+by showing where the changes were made. In other words, it narrows down the
+search area for a programmer to seek for a bug. 
+
+==================================================================================
+Question: How could having easy access to the entire history of a file make you
+a more efficient programmer in the long term?
+
+If there is a bug or a program's behavior that needs to be corrected, one can view its entire history
+to determine where the mistake was originated. Having entire history allows one
+to organize and retain his/her program's growth progress, which allow
+programmers to gain better insight on its development process.
+
+==================================================================================
+Question: What do you think are the pros and cons of manually choosing when to
+create a commit, like you do in Git, vs having versions automatically saved,
+like Google Docs does?
+
+Pros:
+	It allows programmers to construct their own structure of histories. It
+	enable them to define the "crucial" moments of their development; therefore
+	it enables them to navigate their history trees in order to locate possible
+	bugs/mistakes.
+
+Cons:
+	Since programmers are humans, letting programmers to commit manually
+	introduce human-errors. For instance, a programmer might forgot to commit
+	after a logical changes had been made. More simply put, this method
+	introduce irregularity within the version-control.
+
+==================================================================================
+Question: Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+Git understood that programs, unlike regular documents, have dependencies among
+various files. As a result, it is beneficiary for programmers to save all copies
+within a repository to depict and implement this crucial idea of dependency!!! 
+	Some of its benefits includes:
+		1) Once a user commits, there is guarantee that all copies are
+		up-to-date
+		2) This keeps the history trees (version-control should I say) very
+		simple. For the sake of argument, let's suppose each file are saved
+		separately. Then, the version control need to keep track of which
+		version of a file is consistent with other versions of different files.
+		This extra information not only make the tree more populated and
+		complex, it would make the tree grow at exponential rate [can you verify
+		this statement?]
+
+
+==================================================================================
+Question: How can you use the commands git log and git diff to view the history of files?
+
+First use git log to see the overview of the history of files. The command git
+log shows the id of commits as well as its message as well. When you need to
+compare between commits to see exactly what were the changes, you need to use
+git diff.
+
+
+==================================================================================
+Question: How might using version control make you more confident to make
+changes that could break something?
+
+Because git has checkout command which reverts the files from a repository to
+any previous versions. As such reason, any one can be confident to make changes
+as one can easily revert to correct one if one desire to do so.
+ 
+
+==================================================================================
+Question: Now that you have your workspace set up, what do you want to try using
+Git for?
