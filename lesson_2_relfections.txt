@@ -5,7 +5,7 @@ it?
     What it does is it creates a directory to contain all the metadata, which I
     understood so far as some sort of data that reflects all the history of
     commits within this repository. 
-    The Interesting about this git init is that once you initialize a
+    The interesting thing about this 'git init' is that once you initialize a
     repository, there is no commit taking place even if the working directory
     already contains some files. The reason for this sort of implementation is
     to allow:
@@ -25,7 +25,34 @@ Staging area is different in a sense that it is not "real", meaning it is not an
 actual storage where bunch of files reside in. Rather, staging area is an
 abstraction that enable git's core philosophy of: one commit represent one
 logical change. As a logical change can take multiple files to be represented, a
-programmers can simply add these files to stage area where they can be commited
+programmers can simply add these files to stage area where they can be committed
 as one. Notice that if stage area was not available, each commit can only
-operatoes on one file as well. Then for the most of time, each commit will be
+operations on one file as well. Then for the most of time, each commit will be
 only represent partial changes rather a whole logical change. 
+======================================================================================
+Question:How can you use the staging area to make sure you have one commit per logical
+change?
+
+Git introduced staging area so that users can represent multiple files as one
+logical change which often is the case. For instance, let's suppose you are
+adding a new feature in your own project. It is very possible, and often is the
+case, that in order to add the new feature you need to modified multiple files.
+Then you can represent this whole change as one logical change by putting all
+the modified files in staging area.
+
+======================================================================================
+Question: What are some situations when branches would be helpful in keeping
+your history organized? How would branches help?
+
+One such situation could occur when you are 
+
+
+======================================================================================
+Question: How do the diagrams help you visualize the branch structure?
+
+Well, diagrams let you grasp many important attributes of the structure. First,
+	it let you see the reachability of a certain node with respect to others.
+	Second, it shows how many branches are there as well as the point in the
+	history tree where branches diverge from each other. 
+
+
