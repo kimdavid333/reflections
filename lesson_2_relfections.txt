@@ -55,4 +55,14 @@ Well, diagrams let you grasp many important attributes of the structure. First,
 	Second, it shows how many branches are there as well as the point in the
 	history tree where branches diverge from each other. 
 
+======================================================================================
+Question: What is the result of merging two branches together? Why do we
+represent it in the diagram the way we do?
+
+The resulting branch combines changes from both branches. The distinctive
+feature of the diagram was that the resulting tip of merged branches has two
+parents. This is correct representation as the resulting files in a repositories
+reflects the end results from both branches. Therefore we should be able to
+reach all these commits and revert to old versions if we desired to do so. 
+
 
