@@ -61,7 +61,7 @@ represent it in the diagram the way we do?
 
 The resulting branch combines changes from both branches. The distinctive
 feature of the diagram was that the resulting tip of merged branches has two
-parents. This is correct representation as the resulting files in a repositories
+parents. This is correct representation as the resulting files in a repository
 reflects the end results from both branches. Therefore we should be able to
 reach all these commits and revert to old versions if we desired to do so. 
 
