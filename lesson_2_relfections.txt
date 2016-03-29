@@ -65,4 +65,21 @@ parents. This is correct representation as the resulting files in a repository
 reflects the end results from both branches. Therefore we should be able to
 reach all these commits and revert to old versions if we desired to do so. 
 
+======================================================================================
+Question: What are the pros and cons of Git’s automatic merging vs. always doing
+merges manually?
 
+First, let's talk about Git way of automatic merging. Benefits include providing
+convenience and saving lots of time for its users, assuming everything works
+correctly. Automatic merging also encourage users to experiment and diverge from
+its production level development (master branch) into a new branch as merging is
+done efficiently. On the other hands, users do not always have total control
+behind the merging process and thus possible errors might occur without them
+knowing. 
+
+Other approach, which is to merge manually, give users total control over the
+merging process. Hence, other than possible human errors, no other errors should
+be introduced and things would work as expected. Cons of this approach is that
+the process takes lots of time and difficult and tedious. Notice that bigger the
+project, they is more chance of messing up and this wouldn't be a popular
+approach to merge branches. 
