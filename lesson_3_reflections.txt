@@ -1,0 +1,6 @@
+When would you want to create a remote repository rather than keeping all your work local?
+
+Creating a remote repository would allow one to share and collaborate his/her works with public. 
+The shortcoming of keeping all your work local is that although it is still great to work on a big project
+alone, local repository does not have proper services to allow a user to share work with public.
+
