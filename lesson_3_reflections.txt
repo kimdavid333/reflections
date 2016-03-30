@@ -35,3 +35,14 @@ repositories' metadata are copied to the working directories.
 mechanics behind forks are very similar to clones without need for users to copy
 files to their local machine. Benefits of forks over clones include: 1) Give
 credibility to original author 2) Original work remain unaffected.
+
+================================================================================
+Question: What is the benefit of having a copy of the last known state of the
+remote stored locally?
+
+By storing last known state of remote branch, Git can determine whether or not
+files need to be merged or can be done by fast-forward merging. In addition, the
+local copy enable users to work offline without worrying about merging process
+later on. Lastly, keeping track of last state of remote branch enable
+distinction between your work from work from others, and thus providing a
+reference during the merging process.
