@@ -1,6 +1,24 @@
-When would you want to create a remote repository rather than keeping all your work local?
+Question: When would you want to create a remote repository rather than keeping all your work local?
 
 Creating a remote repository would allow one to share and collaborate his/her works with public. 
 The shortcoming of keeping all your work local is that although it is still great to work on a big project
 alone, local repository does not have proper services to allow a user to share work with public.
+
+================================================================================
+Question: Why might you want to always pull changes manually rather than having
+Git automatically stay up-to-date with your remote repository?
+
+	Contrast to working on local computer, GitHub typically is used to share codes
+with public or to collaborate with other members. As a result, it's very natural for
+users to be very careful on what to post on his/her remote repository. For this
+very reason, making Git manually pull changes is much more desirable than
+automatically stay up-to-date with one's remote repository.
+	For instance, suppose you are working on a large project with many contributors,
+and you and your friends are working on a side branch to add a new feature to
+the program. If Git automatically synchronize its remote repository with your
+not-yet-ready-to-share codes, everyone would be able to see your sub-optimal
+code. More importantly, your new feature branch could be a mess if all the
+changes from other contributors get updated automatically, and therefore causing
+unpredictable codes.
+
 
