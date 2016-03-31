@@ -46,3 +46,15 @@ local copy enable users to work offline without worrying about merging process
 later on. Lastly, keeping track of last state of remote branch enable
 distinction between your work from work from others, and thus providing a
 reference during the merging process.
+
+================================================================================
+Question: How would you collaborate without using Git or GitHub? What would be
+easier, and what would be harder?
+    
+I would have collaborated with sending my worked code to collaborators. Easier
+part would be editing and saving changes since I do not have to worry about
+adding to staging area, committing and pulling/pushing to GitHub. However,
+harder part would be tracking changes made by others, reverting changes
+even I made, and locating bugs made by others. Overall, the downfall of
+not using Git or GitHub is so much greater than time and effort saved by
+not using it. 
