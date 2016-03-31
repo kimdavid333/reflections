@@ -58,3 +58,16 @@ harder part would be tracking changes made by others, reverting changes
 even I made, and locating bugs made by others. Overall, the downfall of
 not using Git or GitHub is so much greater than time and effort saved by
 not using it. 
+
+================================================================================
+Question: When would you want to make changes in a separate branch rather than
+directly in master? What benefits does each approach have?
+
+You would want to work on a separate branch when you are working on a big
+project with many collaborators whom have not yet able to see the changes you
+have made. That is, the nature of big project requires everyone to be on the
+same boat in order to keep the project consistent with the groups objective.
+Thus, it is dangerous practice to directly work on master branch which everyone
+is relying to add new features.
+
+
